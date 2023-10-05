@@ -1,0 +1,54 @@
+header {
+    width: 100%;
+    height: fit-content;
+    padding: 15px 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    transition: .5s;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo {
+    font-size: 35px;
+    font-family: "ClickerScript";
+}
+
+header ul {
+    display: flex;
+    gap: 50px;
+    align-items: center;
+}
+
+header ul li a {
+    font-size: 16px;
+    font-family: "PlayfarirDisplay";
+}
+.burger {
+    display: none;
+    align-items: center; 
+    font-size: 25px;
+    cursor: pointer;
+}
+
+.show {
+    right: 0;
+}
+nav,
+.btn {
+    display: flex;
+    align-items: center;
+}
+
+.btn {
+    @include sitebtn;
+}
+
+.btn {
+    color: #000;
+}
